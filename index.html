@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="A cinematic single-page showcase of landmark 3D animation works that changed the medium."
+  >
+  <title>The Greatest of 3D Animation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-glow page-glow-left"></div>
+  <div class="page-glow page-glow-right"></div>
+
+  <header class="hero">
+    <nav class="topbar">
+      <span class="brand">Frame / Future</span>
+      <a href="#gallery" class="top-link">Enter The Gallery</a>
+    </nav>
+
+    <div class="hero-copy">
+      <p class="eyebrow">The Greatest Of 3D Animation</p>
+      <h1>Worlds built from polygons, light, timing, and impossible feeling.</h1>
+      <p class="hero-text">
+        3D animation is more than technical progress. At its best, it turns code into character,
+        simulation into emotion, and digital space into cinema. This collection highlights
+        landmark works that permanently changed how animated stories move, look, and land.
+      </p>
+
+      <div class="hero-meta">
+        <div>
+          <span class="meta-label">Medium-defining works</span>
+          <strong>6 landmarks</strong>
+        </div>
+        <div>
+          <span class="meta-label">From</span>
+          <strong>1995 to 2021</strong>
+        </div>
+        <div>
+          <span class="meta-label">Through-lines</span>
+          <strong>Acting, style, scale</strong>
+        </div>
+      </div>
+
+      <a href="#spotlight" class="button-link">Explore The Canon</a>
+    </div>
+
+    <div class="hero-media" aria-label="Poster collage of landmark 3D animated films">
+      <article class="poster-card poster-card-large">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg"
+          alt="Toy Story theatrical poster"
+        >
+        <div class="poster-caption">
+          <span>1995</span>
+          <strong>Toy Story</strong>
+        </div>
+      </article>
+      <article class="poster-card poster-card-tall">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Spider-Man_Into_the_Spider-Verse_poster.png/500px-Spider-Man_Into_the_Spider-Verse_poster.png"
+          alt="Spider-Man: Into the Spider-Verse theatrical poster"
+        >
+        <div class="poster-caption">
+          <span>2018</span>
+          <strong>Spider-Verse</strong>
+        </div>
+      </article>
+      <article class="poster-card poster-card-small">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Finding_Nemo.jpg/500px-Finding_Nemo.jpg"
+          alt="Finding Nemo theatrical poster"
+        >
+        <div class="poster-caption">
+          <span>2003</span>
+          <strong>Finding Nemo</strong>
+        </div>
+      </article>
+      <article class="poster-card poster-card-small">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/WALL-E_poster.jpg/500px-WALL-E_poster.jpg"
+          alt="WALL-E theatrical poster"
+        >
+        <div class="poster-caption">
+          <span>2008</span>
+          <strong>WALL-E</strong>
+        </div>
+      </article>
+      <div class="orbit-ring"></div>
+      <div class="orbit-ring orbit-ring-small"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro-strip" id="gallery">
+      <p>
+        These are not just popular titles. Each one represents a moment when 3D animation
+        expanded what the medium could do, whether through believable acting, bold design,
+        effects breakthroughs, or a new visual grammar.
+      </p>
+    </section>
+
+    <section class="section spotlight-section" id="spotlight">
+      <div class="section-heading">
+        <p class="eyebrow">Curated Spotlight</p>
+        <h2>Six works that pushed 3D animation forward.</h2>
+      </div>
+
+      <div class="spotlight-layout">
+        <div class="spotlight-list" role="tablist" aria-label="Landmark 3D animation works">
+          <button class="spotlight-item active" data-key="toy-story" role="tab" aria-selected="true">
+            <span class="spotlight-year">1995</span>
+            <span class="spotlight-title">Toy Story</span>
+            <span class="spotlight-studio">Pixar Animation Studios</span>
+          </button>
+          <button class="spotlight-item" data-key="shrek" role="tab" aria-selected="false">
+            <span class="spotlight-year">2001</span>
+            <span class="spotlight-title">Shrek</span>
+            <span class="spotlight-studio">DreamWorks Animation</span>
+          </button>
+          <button class="spotlight-item" data-key="finding-nemo" role="tab" aria-selected="false">
+            <span class="spotlight-year">2003</span>
+            <span class="spotlight-title">Finding Nemo</span>
+            <span class="spotlight-studio">Pixar Animation Studios</span>
+          </button>
+          <button class="spotlight-item" data-key="wall-e" role="tab" aria-selected="false">
+            <span class="spotlight-year">2008</span>
+            <span class="spotlight-title">WALL-E</span>
+            <span class="spotlight-studio">Pixar Animation Studios</span>
+          </button>
+          <button class="spotlight-item" data-key="frozen" role="tab" aria-selected="false">
+            <span class="spotlight-year">2013</span>
+            <span class="spotlight-title">Frozen</span>
+            <span class="spotlight-studio">Walt Disney Animation Studios</span>
+          </button>
+          <button class="spotlight-item" data-key="spider-verse" role="tab" aria-selected="false">
+            <span class="spotlight-year">2018</span>
+            <span class="spotlight-title">Spider-Man: Into the Spider-Verse</span>
+            <span class="spotlight-studio">Sony Pictures Animation</span>
+          </button>
+        </div>
+
+        <article class="spotlight-panel">
+          <div class="panel-media">
+            <img
+              id="panel-image"
+              src="https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg"
+              alt="Toy Story theatrical poster"
+            >
+          </div>
+
+          <div class="panel-copy">
+            <div class="panel-chip" id="panel-chip">Landmark Breakthrough</div>
+            <h3 id="panel-title">Toy Story</h3>
+            <p class="panel-subhead" id="panel-subhead">Pixar Animation Studios • 1995</p>
+            <p class="panel-body" id="panel-body">
+              The first fully computer-animated feature film proved that digital characters could carry
+              a complete emotional story, not just a demo reel of technology.
+            </p>
+
+            <div class="panel-grid">
+              <div>
+                <span class="panel-label">Why it matters</span>
+                <p id="panel-impact">
+                  It turned CG from a novelty into a storytelling medium and set the baseline for modern
+                  feature animation.
+                </p>
+              </div>
+              <div>
+                <span class="panel-label">Signature strength</span>
+                <p id="panel-craft">
+                  Clear silhouette-driven character animation and appealing, readable digital staging.
+                </p>
+              </div>
+            </div>
+
+            <div class="panel-footer">
+              <a id="panel-link" href="https://www.pixar.com/feature-films/toy-story" target="_blank" rel="noreferrer">
+                Official feature page
+              </a>
+              <span id="panel-tagline">A starting gun for the CG era.</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section">
+      <div class="section-heading">
+        <p class="eyebrow">Momentum</p>
+        <h2>Every leap changed the next decade.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-card reveal">
+          <span>1995</span>
+          <h3>Toy Story</h3>
+          <p>The all-CG feature becomes viable, and the industry realigns around computer animation.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>2001</span>
+          <h3>Shrek</h3>
+          <p>Broader comic performance and pop-energy editing show CG can be anarchic, not just pristine.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>2003</span>
+          <h3>Finding Nemo</h3>
+          <p>Underwater lighting, volumetrics, and environmental simulation deepen the sense of immersion.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>2008</span>
+          <h3>WALL-E</h3>
+          <p>Minimal dialogue and camera language prove digital characters can feel achingly human.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>2013</span>
+          <h3>Frozen</h3>
+          <p>FX-heavy snow and ice become story tools, not background decoration.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>2018</span>
+          <h3>Spider-Verse</h3>
+          <p>Stylization breaks the photoreal ceiling and reminds the medium that graphics can be graphic.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pillars-section">
+      <div class="section-heading">
+        <p class="eyebrow">What Greatness Looks Like</p>
+        <h2>Three qualities the best 3D animation always nails.</h2>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar reveal">
+          <h3>Character acting</h3>
+          <p>
+            Great 3D animation is never just smooth motion. It is intention in the eyes, rhythm in the
+            pose changes, and believable thought before action.
+          </p>
+        </article>
+        <article class="pillar reveal">
+          <h3>World simulation</h3>
+          <p>
+            Hair, cloth, water, smoke, snow, and light give CG its physical credibility. The best films
+            use those tools to reinforce mood and storytelling.
+          </p>
+        </article>
+        <article class="pillar reveal">
+          <h3>Visual identity</h3>
+          <p>
+            Landmark work does not chase generic polish. It decides what kind of image it wants to be and
+            bends the pipeline to make that identity unmistakable.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section closing-section">
+      <p class="eyebrow">Final Frame</p>
+      <h2>The greatest 3D animation does not hide the machine. It makes the machine feel alive.</h2>
+      <p>
+        From <em>Toy Story</em> opening the door to <em>Spider-Verse</em> blowing past realism,
+        these works show that the medium evolves when artists treat technology as language, not just tools.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
